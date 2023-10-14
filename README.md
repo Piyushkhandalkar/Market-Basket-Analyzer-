@@ -54,8 +54,6 @@ After you have the prerequisites installed, you can set up and run the applicati
     pip install -r requirements.txt
     ```
 
-   Make sure that the `requirements.txt` file in your project directory includes the necessary dependencies, which you can list as shown above.
-
 3. **Run the Application:**
 
     ```bash
@@ -63,4 +61,6 @@ After you have the prerequisites installed, you can set up and run the applicati
     ```
 
    This command starts the Flask development server, and your application will be accessible at `http://localhost:5000/` in your web browser.
+
+inside the csv folder there are two script which are used to generate the random csv file for testing purposes.
 
