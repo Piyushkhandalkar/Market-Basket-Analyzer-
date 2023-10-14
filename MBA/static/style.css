@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #333;
+    margin-top: 20px;
+}
+
+pre {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    white-space: pre-wrap;
+}
+
+.visualizations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pie-chart,
+.bar-chart {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.pie-chart img,
+.bar-chart img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .visualizations {
+        flex-direction: column;
+    }
+
+    .pie-chart,
+    .bar-chart {
+        flex-basis: 100%;
+    }
+}
+

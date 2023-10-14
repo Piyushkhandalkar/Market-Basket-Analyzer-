@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Basket Analysis - Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0078d4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .result-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(5px);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        hr {
+            border: 1px solid #ccc;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            text-align: left;
+        }
+
+        .chart-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        img.chart {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1>Market Basket Analysis - Results</h1>
+        <hr>
+        
+        <h2>Analysis Result:</h2>
+        <pre>{{ analysis_result }}</pre>
+        
+        <h2>Visualizations:</h2>
+        
+        <div class="chart-container">
+            <h3>Distribution of Items in Transactions:</h3>
+            <img src="{{ item_distribution_plot }}" alt="Item Distribution" class="chart">
+        </div>
+        
+        <div class="chart-container">
+            <h3>Support of Frequent Itemsets:</h3>
+            <img src="{{ support_plot }}" alt="Support Plot" class="chart">
+        </div>
+        
+        <div class="chart-container">
+            <h3>Confidence of Association Rules:</h3>
+            <img src="{{ confidence_plot }}" alt="Confidence Plot" class="chart">
+        </div>
+    </div>
+</body>
+</html>
