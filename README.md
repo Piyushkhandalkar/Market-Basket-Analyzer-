@@ -44,7 +44,7 @@ After you have the prerequisites installed, you can set up and run the applicati
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/your-username/your-project.git
+    git clone https://github.com/Piyushkhandalkar/Market-Basket-Analyzer-.git
     cd your-project
     ```
 
